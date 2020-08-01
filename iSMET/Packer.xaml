@@ -1,0 +1,19 @@
+﻿<mui:ModernWindow x:Class="iSMET.Packer"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  mc:Ignorable="d"
+                  Title="iSMET Packer"
+                  Style="{StaticResource BlankWindow}" Height="241.538" Width="532.168" Loaded="ModernWindow_Loaded">
+    <ScrollViewer>
+        <StackPanel>
+            <Grid Height="202" Width="500">
+                <Button Content="Select Meterpreter File" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Width="168" x:Name="btnBrowse" Click="btnBrowse_Click"/>
+                <TextBox HorizontalAlignment="Left" Height="160" Margin="10,37,0,0" TextWrapping="Wrap" Text="iSMET Packer Module v2.0" VerticalAlignment="Top" Width="474" x:Name="txtStatus" Cursor="" AllowDrop="False" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" IsReadOnly="True"/>
+                <Button Content="Generate Memory Module" HorizontalAlignment="Left" Margin="293,6,0,0" VerticalAlignment="Top" Width="191" x:Name="btnGenerate" Click="btnGenerate_Click"/>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</mui:ModernWindow>

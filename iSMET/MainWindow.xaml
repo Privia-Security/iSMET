@@ -1,0 +1,10 @@
+﻿<mui:ModernWindow x:Class="iSMET.MainWindow"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  Title="iSMET (A)Symmetric Meterpreter Encryption Tool" 
+                  Style="{StaticResource BlankWindow}" Height="432.901" Width="761.762">
+    <ScrollViewer>
+        <StackPanel/>
+    </ScrollViewer>
+</mui:ModernWindow>

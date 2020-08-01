@@ -1,0 +1,57 @@
+﻿<mui:ModernWindow x:Class="iSMET.Main"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  mc:Ignorable="d"
+                  Title="iSMET (A)Symmetric Meterpreter Encryption Tool"
+                  Style="{StaticResource BlankWindow}" Height="348.254" Width="532.168" Loaded="ModernWindow_Loaded" ResizeMode="CanMinimize">
+    <ScrollViewer>
+        <StackPanel>
+            <Grid Height="276" Width="494">
+                <TextBox HorizontalAlignment="Left" Height="138" Margin="10,127,0,0" TextWrapping="Wrap" Text="iSMET v2.0" VerticalAlignment="Top" Width="474" Name="txtStatus" Cursor="" AllowDrop="False" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" IsReadOnly="True"/>
+                <Label Content="IP:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <Label Content="Type:" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top"/>
+                <Label Content="Payload:" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.487,-0.338"/>
+                <Label Content="Port:" HorizontalAlignment="Left" Margin="275,13,0,0" VerticalAlignment="Top"/>
+                <Label Content="Encryption:" HorizontalAlignment="Left" Margin="275,42,0,0" VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="75,7,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" Name="txtIP"/>
+                <Label Content="Sleep:" HorizontalAlignment="Left" Margin="378,15,0,0" VerticalAlignment="Top" Name="lblIP"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="304,11,0,0" TextWrapping="Wrap" Text="4444" VerticalAlignment="Top" Width="69" Name="txtPort"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="414,13,0,0" TextWrapping="Wrap" Text="5000" VerticalAlignment="Top" Width="56" Name="txtSleep"/>
+                <ComboBox HorizontalAlignment="Left" Margin="339,39,0,0" VerticalAlignment="Top" Width="131" Name="cmbEncryption">
+                    <ComboBoxItem Content="No Encryption"/>
+                    <ComboBoxItem Content="Base64"/>
+                    <ComboBoxItem Content="Rijndael / AES"/>
+                    <ComboBoxItem Content="DES"/>
+                    <ComboBoxItem Content="3DES"/>
+                    <ComboBoxItem Content="RC2"/>
+                    <ComboBoxItem Content="RSA"/>
+                    <ComboBoxItem Content="AES-CBC"/>
+                    <ComboBoxItem Content="Blowfish"/>
+                </ComboBox>
+                <ComboBox HorizontalAlignment="Left" Margin="75,35,0,0" VerticalAlignment="Top" Width="177" Name="cmbType">
+                    <ComboBoxItem Content="Console Application"/>
+                    <ComboBoxItem Content="Windows Form Application"/>
+                </ComboBox>
+                <ComboBox HorizontalAlignment="Left" Margin="75,62,0,0" VerticalAlignment="Top" Width="177" Name="cmbPayload">
+                    <ComboBoxItem Content="meterpreter/reverse_tcp"/>
+                    <ComboBoxItem Content="meterpreter/reverse_tcp_rc4"/>
+                    <ComboBoxItem Content="meterpreter/bind_tcp"/>
+                    <ComboBoxItem Content="shell/reverse_tcp"/>
+                    <ComboBoxItem Content="shell/reverse_tcp_rc4"/>
+                    <ComboBoxItem Content="shell/bind_tcp"/>
+                    <ComboBoxItem Content="shell/bind_tcp_rc4"/>
+                    <ComboBoxItem Content="x64/meterpreter/reverse_tcp"/>
+                    <ComboBoxItem Content="x64/meterpreter/reverse_tcp_rc4"/>
+                    <ComboBoxItem Content="x64/meterpreter/bind_tcp"/>
+                    <ComboBoxItem Content="x64/shell/reverse_tcp"/>
+                    <ComboBoxItem Content="x64/shell/bind_tcp"/>
+                </ComboBox>
+                <Button Content="Build Meterpreter" HorizontalAlignment="Left" Margin="353,96,0,0" VerticalAlignment="Top" Width="131" Name="btnBuilder" Click="btnBuilder_Click"/>
+                <Button Content="iSMET Packer" HorizontalAlignment="Left" Margin="217,96,0,0" VerticalAlignment="Top" Width="131" x:Name="btnPacker" Click="btnPacker_Click"/>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</mui:ModernWindow>
