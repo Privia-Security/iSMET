@@ -3,11 +3,11 @@ iSMET (A)symmetric Meterpreter Encryption Tool
 
 iSMET is a tool that can use both "asymmetric" and "symmetric" encryption techniques. iSMET can produce malware using 8 different encryption techniques for 12 different payloads.
 
-#Application Type
+# Application Type
 Console Application
 Windows Form Application	
 
-#Encryption
+# Encryption
 No Encryption
 Base64
 Rijndael / AES
@@ -18,8 +18,9 @@ RSA
 AES-CBC
 Blowfish	
 
-#Payload
+# Payload
 meterpreter/reverse_tcp
+
 meterpreter/reverse_tcp_rc4
 meterpreter/bind_tcp
 shell/reverse_tcp
