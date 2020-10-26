@@ -1,7 +1,11 @@
+![Alt text](https://www.priviasecurity.com/wp-content/uploads/2020/08/iSMET.jpg?raw=true "iSMET v2.1")
+
 # iSMETv2.1
 iSMET (A)symmetric Meterpreter Encryption Tool
 
 iSMET is a tool that can use both "asymmetric" and "symmetric" encryption techniques. iSMET can produce malware using 8 different encryption techniques for 14 different payloads.
+
+Details: https://www.priviasecurity.com/ismet-asymmetric-meterpreter-encryption-tool-2/
 
 # v2.1 Changes
 Add Command Line Interface
